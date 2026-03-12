@@ -20,7 +20,9 @@ app.get("/create",(req,res)=>{
 app.get("/dashboard",(req,res)=>{
     res.render("dashboard");
 })
-
+app.get("/food",(req,res)=>{
+    res.render("food");
+})
 app.listen(4000,()=>{
     console.log("server started");
 })
