@@ -23,6 +23,15 @@ app.get("/dashboard",(req,res)=>{
 app.get("/food",(req,res)=>{
     res.render("food");
 })
+app.get("/chat_bot",(req,res)=>{
+    res.render("chat_bot");
+})
+app.get("/community",(req,res)=>{
+    res.render("community");
+})
+app.get("medication",(req,res)=>{
+    res.render("reminders");
+})
 app.listen(4000,()=>{
     console.log("server started");
 })
