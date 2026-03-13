@@ -1,12 +1,7 @@
  recovr.ai: Your Personal Health Companion
 
 we have deployed : https://recovr-ai.onrender.com
-how to run locallay:
-npm install
-node app.js
-
-2) chatbot:
-uvicorn main:app --host 0.0.0.0 --port $PORT
+ 
 
 
 ## 📖 Project Overview
@@ -77,23 +72,11 @@ Tracks physical movement to promote an active lifestyle.
     *For Python Backend:*
     ```bash
     pip install -r requirements.txt
+    uvicorn main:app --host 0.0.0.0 --port $PORT
     ```
-    *For Node.js Frontend:*
+    *For Node.js*
     ```bash
-    cd frontend
     npm install
+    node app.js
     ```
-
-3.  **Configure Environment**
-    Create a `.env` file in the root directory:
-    ```env
-    DB_URI=mongodb://localhost:27017/healthmate
-    AI_API_KEY=your_api_key_here
-    PORT=3000
-    ```
-
-4.  **Run the Application**
-    ```bash
-    npm start
-    # or python app.py
-    ```
+ 
